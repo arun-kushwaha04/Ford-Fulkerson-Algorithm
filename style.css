@@ -88,5 +88,8 @@ h5 {
     height: 5%;
     font-size: 1rem;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
 }
