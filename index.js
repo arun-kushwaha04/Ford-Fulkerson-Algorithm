@@ -323,7 +323,7 @@ const fordFullkersonDFS = async () => {
     addLog('Invalid path reverting back!');
     addLog('-----------------------------------');
     path.pop(node);
-    await delay(400);
+    await delay(800);
     return;
    }
    addLog('Updating path');
@@ -332,7 +332,7 @@ const fordFullkersonDFS = async () => {
    path.pop(node);
    flow += bottleNeck;
    agPath += 1;
-   await delay(400);
+   await delay(800);
    return;
   }
   //adding node to the path
@@ -363,11 +363,11 @@ const fordFullkersonDFS = async () => {
    if (graph[parentNode][i].label === childNode) {
     console.log('child node update');
     graph[parentNode][i].color = ORANGE;
-    await delay(200);
+    await delay(500);
     await updatePath(path, index + 1, bottleNeck);
     graph[parentNode][i].flow += bottleNeck;
     addLog(`Increased flow for node ${parentNode} by ${bottleNeck}`);
-    await delay(200);
+    await delay(500);
     console.log('child node update 2');
     graph[parentNode][i].color = BLACK;
     return;

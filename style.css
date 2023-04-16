@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css');
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
+    height: 100vh;
 }
 
 h2 {
@@ -21,15 +23,15 @@ h5 {
 }
 
 .algorithm-vizualizer {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 95%;
     display: flex;
     background-color: azure;
     gap: 1rem;
 }
 
 .options {
-    width: 15vw;
+    width: 15%;
     display: flex;
     flex-direction: column;
 }
@@ -75,4 +77,17 @@ h5 {
 .algo {
     display: flex;
     height: auto;
+}
+
+.github-opener {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.footer {
+    height: 5%;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: white;
 }
