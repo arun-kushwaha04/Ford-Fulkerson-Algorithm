@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Graph Algorithms</title>
+</head>
+
+<body>
+    <section class="algorithm-vizualizer">
+        <div class="left-panel">
+            <h2>Electricity Flow Problem</h2>
+            <div class="algo-list">
+                <div class="algo">
+                    <h5>Ford Fulkerson(DFS)</h5>
+                    <button onclick="fordFullkersonDFS()">Run</button>
+                </div>
+            </div>
+            <div class="logs">
+                <p>Logs</p>
+            </div>
+        </div>
+        <div class="canvas-wrapper">
+            <canvas id="graph" height="600"></canvas>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
